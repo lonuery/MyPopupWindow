@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+    <ImageView
+        android:id="@+id/groupAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/default_avatar_shadow"
+        android:layout_centerVertical="true">
+        
+    </ImageView>
+
+    <TextView
+        android:id="@+id/groupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/groupAvatar"
+        android:text="测试第一组"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/groupSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/groupName"
+        android:layout_alignBottom="@+id/groupName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="26dp"
+        android:layout_centerVertical="true"
+        android:text="切换群组" />
+	
+    </RelativeLayout>
+</RelativeLayout>
